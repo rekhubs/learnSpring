@@ -26,6 +26,8 @@ public class MainApp {
         user.setPassword("4321");
         user.setCreateTime(new Date());
         user.setExpireTime(new Date());
+
+        //
         // insert user
 //        userDao.insertUser(user);
         //userDao.i

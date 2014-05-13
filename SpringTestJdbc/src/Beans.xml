@@ -26,7 +26,7 @@
 
     <bean id="gateGuard" class="Guard" />
 
-
+<!--
     <aop:config>
         <aop:aspect ref="gateGuard">
             <aop:pointcut id="ptCheckUser" expression="execution( * UserDao.getUsernameById(..))" />
@@ -34,6 +34,10 @@
             <aop:after method="letGo" pointcut-ref="ptCheckUser" />
         </aop:aspect>
     </aop:config>
+    -->
+
+    <aop:aspectj-autoproxy />
+
 
 </beans>
 
